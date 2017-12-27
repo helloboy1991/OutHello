@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>OutHello</title>
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"></link>
+    <title>Out Hello to the world!</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
 </head>
 <body>
     <div class="HeaderBar">
+    	<div class="HeaderContainer">
+    		<div class="HeaderLeftContainer">
+    			<img class="HeaderLogo" src="{{ url_for('static', filename='imgs/logo.png') }}">
+    			<span class="HeaderTitle">Hello</span>
+    			<form class="HeaderSearchBox">
+    				<input id="search-input" type="text" name="search">
+    			</form>
+    		</div>
+    		<div class="HeaderRightContainer">
+    			<span class="HeaderRightItem HeaderLongin">Login</span>
+    			<span id="header-time" class="HeaderRightItem HeaderTime">Time</span>
+    		</div>
+    	</div>
     </div>
 </body>
 </html>

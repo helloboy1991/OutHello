@@ -5,8 +5,58 @@ body {
 }
 
 .HeaderBar {
-	height: 5em;
+	height: 3.5em;
 	display: block;
 	background: #fff;
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 0.02em solid #777;
+	box-shadow: 0 0 0.1em #666;
+	background-color: lightgray;
+}
+
+.HeaderContainer {
+	height: 100%;
+	margin-left: 1em;
+	margin-right: 1em;
+	position: relative;
+}
+
+.HeaderLeftContainer {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	margin-top: 0.45em;
+}
+
+.HeaderLogo {
+	height: 2.5em;
+}
+
+.HeaderSearchBox {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0.6em;
+	margin-left: .25em;
+}
+
+#search-input {
+	height: 1.25em;
+	width: 15em;
+	font-size: large;
+}
+
+.HeaderTitle {
+	font-size: xx-large;
+	vertical-align: bottom;
+	color: #5b9bdd;
+}
+
+.HeaderRightContainer {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	margin-top: 1.75em;
+}
+
+.HeaderRightItem {
+	font-size: small;
 }
