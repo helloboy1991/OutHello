@@ -25,5 +25,5 @@ window.onload = function() {
 	});
 
 	ShowTime();
-	window.setTimeout(HiddenWelcom, 2000);
+	// window.setTimeout(HiddenWelcom, 2000);
 }
