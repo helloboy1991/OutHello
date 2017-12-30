@@ -16,5 +16,14 @@ window.onload = function() {
 		setTimeout(ShowTime, 1000);
 	}
 
-	window.setTimeout(ShowTime, 1000);
+	function HiddenWelcom() {
+		$("#welcome-panel").hide();
+	}
+
+	$("#search-input").click(function(){
+		$("#search-input").val("");
+	});
+
+	ShowTime();
+	window.setTimeout(HiddenWelcom, 2000);
 }
