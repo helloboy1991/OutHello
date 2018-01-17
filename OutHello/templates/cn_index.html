@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>向世界说哈喽!</title>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}">
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
-  			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  			crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+	<meta charset="utf-8">
+	<title>向世界说哈喽!</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}">
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"></script>
+	<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
 </head>
 <body>
-    <div class="HeaderBar">
-    	<div class="HeaderContainer">
-    		<div class="HeaderLeftContainer">
-    			<img class="HeaderLogo" src="{{ url_for('static', filename='imgs/logo.png') }}">
-    			<span class="HeaderTitle">哦哈</span>
-    			<ul class="NavItems">
-    				<li class="Active"><a href="/">首页</a></li>
-    				<li>新闻</li>
-    				<li>工具</li>
-    				<li>游戏</li>
-    				<li>更多</li>
-    			</ul>
-    			<form class="HeaderSearchBox" action="http://www.baidu.com/baidu" target="_blank">
-    				<input type="hidden" name="tn" value="baidu">
-    				<input id="search-input" type="text" name="word" value="搜索...">
-    			</form>
-    		</div>
-    		<div class="HeaderRightContainer">
-    			<span class="HeaderRightItem HeaderLongin">登录</span>
-    			<span id="header-time" class="HeaderRightItem HeaderTime">Time</span>
-    		</div>
-    	</div>
-    </div>
-    <div class="MainContainer">
-    	<div id="welcome-panel" class="WelcomeContainer">
-    		<h1>欢 迎!</h1>
-    		<h2>让我们向世界说哈喽!</h2>
-    		<a href="/">您可以将这个简单的页面作为上网的起始页.</a>
-    	</div>
-    </div>
+	<div class="HeaderBar">
+		<div class="HeaderContainer">
+			<div class="HeaderLeftContainer">
+				<img class="HeaderLogo" src="{{ url_for('static', filename='imgs/logo.png') }}">
+				<span class="HeaderTitle">哦哈</span>
+				<ul class="NavItems">
+					<li class="Active"><a href="/">首页</a></li>
+					<li>新闻</li>
+					<li>工具</li>
+					<li>游戏</li>
+					<li>更多</li>
+				</ul>
+				<form class="HeaderSearchBox" action="http://www.baidu.com/baidu" target="_blank">
+					<input type="hidden" name="tn" value="baidu">
+					<input id="search-input" type="text" name="word" value="搜索...">
+				</form>
+			</div>
+			<div class="HeaderRightContainer">
+				<a href="/login">
+					<span class="HeaderRightItem HeaderLongin">登录</span>
+				</a>
+				<span id="header-time" class="HeaderRightItem HeaderTime">Time</span>
+			</div>
+		</div>
+	</div>
+	<div class="MainContainer">
+		<div id="welcome-panel" class="WelcomeContainer">
+			<h1>欢 迎!</h1>
+			<h2>让我们向世界说哈喽!</h2>
+			<a href="/">您可以将这个简单的页面作为上网的起始页.</a>
+		</div>
+	</div>
 </body>
 </html>

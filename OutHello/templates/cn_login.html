@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Out Hello to the world!</title>
+    <meta charset="utf-8">
+    <title>向世界说哈喽!</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}">
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"
   			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   			crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='login.js') }}"></script>
 </head>
 <body>
     <div class="HeaderBar">
     	<div class="HeaderContainer">
     		<div class="HeaderLeftContainer">
     			<img class="HeaderLogo" src="{{ url_for('static', filename='imgs/logo.png') }}">
-    			<span class="HeaderTitle">Hello</span>
+    			<span class="HeaderTitle">哦哈</span>
     			<ul class="NavItems">
-    				<li class="Active"><a href="/">Home</a></li>
-    				<li>News</li>
-    				<li>Tools</li>
-    				<li>Games</li>
-    				<li>More</li>
+    				<li class="Active"><a href="/">首页</a></li>
+    				<li>新闻</li>
+    				<li>工具</li>
+    				<li>游戏</li>
+    				<li>更多</li>
     			</ul>
     			<form class="HeaderSearchBox" action="http://www.baidu.com/baidu" target="_blank">
     				<input type="hidden" name="tn" value="baidu">
-    				<input id="search-input" type="text" name="word" value="search...">
+    				<input id="search-input" type="text" name="word" value="搜索...">
     			</form>
     		</div>
     		<div class="HeaderRightContainer">
@@ -37,9 +38,21 @@
     <div class="MainContainer">
     	<div class="CenterContainer">
     		<div id="welcome-panel" class="WelcomeContainer">
-	    		<h1>Welcome!</h1>
-	    		<h2>Let's out hello to the world!</h2>
-	    		<a href="/">You can set this simple page as your first page to Internet.</a>
+	    		<h1>登录</h1>
+	    		<form action="#" method="Post">
+	    			<div class="LoginItem">
+	    				<span class="LoginLabel">用户名</span>
+	    				<input type="text" name="user-name">
+	    			</div>
+	    			<div class="LoginItem">
+	    				<span class="LoginLabel">密码</span>
+	    				<input type="password" name="password">
+	    			</div>
+	    			<div class="LoginItem">
+	    				<a href="/logup">注册</a>
+	    				<input type="submit" name="submit" value="登录">
+	    			</div>
+	    		</form>
     		</div>
     	</div>
     </div>

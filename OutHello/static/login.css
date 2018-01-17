@@ -121,3 +121,14 @@ div.CenterContainer {
 	border-right-style: groove;
 	border-right-width: 0.01em;
 }
+
+.LoginItem {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.LoginLabel {
+	width: 5em;
+	text-align: right;
+	margin-right: 1em;
+}

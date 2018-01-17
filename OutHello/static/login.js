@@ -27,13 +27,3 @@ window.onload = function() {
 	ShowTime();
 	// window.setTimeout(HiddenWelcom, 2000);
 }
-
-$(document).ready(function(){
-	function check_login() {
-		var uname = $.cookie('name');
-		if(uname != null) {
-			$('span.HeaderLongin').text(uname);
-		}
-	}
-	check_login();
-});
